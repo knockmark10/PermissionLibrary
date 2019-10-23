@@ -5,7 +5,7 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.pm.PackageManager
 import android.os.Build
-import androidx.core.app.ActivityCompat
+import android.support.v4.app.ActivityCompat
 import com.android.permissionlibrary.callbacks.PermissionCallback
 import com.tbruyelle.rxpermissions2.RxPermissions
 
