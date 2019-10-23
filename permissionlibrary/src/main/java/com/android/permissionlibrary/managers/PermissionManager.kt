@@ -40,9 +40,9 @@ class PermissionManager(
     fun isPermissionGranted(permission: String): Boolean =
         if (permission == Manifest.permission.GET_ACCOUNTS) {
             Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP_MR1 ||
-                    selfPermissionIsGranted(permission)
+                    this.selfPermissionIsGranted(permission)
         } else {
-            selfPermissionIsGranted(permission)
+            this.selfPermissionIsGranted(permission)
         }
 
     /**
